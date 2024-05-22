@@ -63,7 +63,7 @@ class _WidgetScreenState extends State<WidgetScreen> {
             ),
             OutlinedButton(
               onPressed: dispose,
-              child: const Text('Beenden!'),
+              child: const Text('Beenden'),
             ),
           ],
         ),
