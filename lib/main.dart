@@ -1,7 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +39,6 @@ class _WidgetScreenState extends State<WidgetScreen> {
     super.dispose();
   }
 
-
   void _incrementCounter() {
     setState(() {
       _counter += 2;
@@ -50,8 +48,6 @@ class _WidgetScreenState extends State<WidgetScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
-      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -65,10 +61,13 @@ class _WidgetScreenState extends State<WidgetScreen> {
               onPressed: _incrementCounter,
               child: const Text('Klick mich!'),
             ),
+            OutlinedButton(
+              onPressed: dispose,
+              child: const Text('Beenden!'),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
