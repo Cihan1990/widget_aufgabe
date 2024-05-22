@@ -30,12 +30,12 @@ class _WidgetScreenState extends State<WidgetScreen> {
   @override
   void initState() {
     super.initState();
-    print('initState() wurde aufgerufen.');
+    debugPrint('initState() wurde aufgerufen.');
   }
 
   @override
   void dispose() {
-    print('dispose() wurde aufgerufen.');
+    debugPrint('dispose() wurde aufgerufen.');
     super.dispose();
   }
 
@@ -47,6 +47,7 @@ class _WidgetScreenState extends State<WidgetScreen> {
 
   @override
   Widget build(BuildContext context) {
+   debugPrint('Build wurde aufgerufen');
     return Scaffold(
       body: Center(
         child: Column(
